@@ -1,1 +1,45 @@
-<p>tuturiais works!</p>
+<main class="max-w-7xl mx-auto px-4 py-12">
+  
+  <header class="mb-12 text-center">
+    <h1 class="text-4xl font-extrabold text-gray-900 mb-4 tracking-tight">
+      Central de Tutoriais
+    </h1>
+    <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+      Aprenda as melhores práticas de <span class="text-red-600 font-semibold">Angular</span> 
+      e a estilização moderna com <span class="text-blue-600 font-semibold">Tailwind CSS</span>.
+    </p>
+  </header>
+
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+    
+    @for (video of videos; track video.id) {
+      <div class="bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden transition-all hover:shadow-2xl hover:-translate-y-1">
+        
+        <div class="aspect-video bg-black">
+          <iframe 
+            class="w-full h-full"
+            [src]="getSafeUrl(video.id)" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+          </iframe>
+        </div>
+
+        <div class="p-6 flex items-center justify-between">
+          <div>
+            <h2 class="text-xl font-bold text-gray-800">{{ video.title }}</h2>
+            <p class="text-sm text-gray-500 mt-1">Tutorial completo de {{ video.tech }}</p>
+          </div>
+          
+          <span [class]="video.tech === 'Angular' ? 'bg-red-100 text-red-700 border-red-200' : 'bg-blue-100 text-blue-700 border-blue-200'" 
+                class="px-4 py-1 rounded-full text-xs font-bold border uppercase tracking-tighter">
+            {{ video.tech }}
+          </span>
+        </div>
+
+      </div>
+    }
+
+  </div>
+</main>
