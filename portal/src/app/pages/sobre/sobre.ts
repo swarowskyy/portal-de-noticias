@@ -10,9 +10,9 @@ import { CommonModule } from '@angular/common';
 })
 export class Sobre {
   // Dados que aparecerão na página
-  nome = 'Francy L. S.';
+  nome = 'Luiza Swarowsky';
   cargo = 'Desenvolvedor Full Stack em Formação';
-  frase = '"Resolvendo problemas que eu não sabia que tinha de formas que eu ainda estou aprendendo."';
+  frase = '"Aprendendo a aprender."';
   
   techs = ['TypeScript', 'Node.js', 'HTML', 'GitHub', 'Angular', 'Tailwind'];
 }
