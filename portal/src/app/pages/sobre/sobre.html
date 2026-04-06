@@ -1,72 +1,73 @@
 <main class="max-w-4xl mx-auto px-4 py-16">
-    <div class="bg-[#fbf9fc] rounded-3xl shadow-xl overflow-hidden border border-[#e4d4e6]">
+    <div class="bg-white rounded-[3rem] shadow-2xl shadow-[#e4d4e6]/50 overflow-hidden border border-[#f4edf5]">
 
         <div class="px-8 pb-12">
 
-            <div class="px-8 pb-12 pt-10">
+            <div class="px-8 pb-12 pt-12 border-b border-[#f4edf5]">
                 <div class="text-center md:text-left">
-                    <h1 class="text-5xl font-black text-[#4a3651] tracking-tight mb-2">
+                    <h1 class="text-6xl font-black text-[#4a3651] tracking-tight mb-2">
                         {{ nome }}
                     </h1>
-                    <p class="mt-4 text-[#765a7c] leading-relaxed max-w-md">
+                    <p class="mt-4 text-[#765a7c] leading-relaxed max-w-md font-medium">
                         Estudante do <strong>Curso Técnico em Informática para Internet</strong>.
                         Tenho 15 anos, comemoro meu aniversário dia 01 de maio e sou apaixonada por tecnologia e
                         desenvolvimento web.
                     </p>
-                    <p class="text-[#A47DAB] font-bold text-xl">
+                    
+                    <p class="text-[#A47DAB] bg-[#f4edf5] inline-block px-6 py-2 rounded-full font-extrabold text-lg mt-6 tracking-wide">
                         {{ cargo }}
                     </p>
 
-                    <div class="mt-8 inline-block bg-[#f4edf5] px-6 py-3 rounded-xl border border-dashed border-[#bda4c4]">
-                        <p class="text-[#8b6b93] italic font-medium">{{ frase }}</p>
+                    <div class="mt-8 block md:inline-block bg-[#fbf9fc] px-8 py-5 rounded-[2rem] border-2 border-dashed border-[#e4d4e6]">
+                        <p class="text-[#8b6b93] italic font-semibold text-sm">{{ frase }}</p>
                     </div>
                 </div>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mt-12">
-                <div>
-                    <h3 class="text-sm font-black uppercase tracking-widest text-[#bda4c4] mb-6 flex items-center">
-                        <span class="w-8 bg-[#e4d4e6] mr-3"></span> Stack Tecnológica
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+                <div class="bg-[#fbf9fc] p-8 rounded-[2.5rem]">
+                    <h3 class="text-xs font-black uppercase tracking-widest text-[#bda4c4] mb-8 flex items-center">
+                        <span class="w-2 h-2 bg-[#A47DAB] rounded-full mr-3"></span> Stack Tecnológica
                     </h3>
-                    <div class="flex flex-wrap gap-3 max-w-xs">
+                    <div class="flex flex-wrap gap-3">
                         @for (t of techs; track t) {
                         <span
-                            class="px-4 py-2 bg-[#4a3651] text-white rounded-lg text-sm font-bold shadow-sm hover:bg-[#A47DAB] transition-colors">
+                            class="px-5 py-2 bg-white text-[#4a3651] rounded-2xl text-xs font-bold shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all cursor-default border border-[#f4edf5]">
                             {{ t }}
                         </span>
                         }
                     </div>
                 </div>
 
-                <div>
-                    <h3 class="text-sm font-black uppercase tracking-widest text-[#bda4c4] mb-6 flex items-center">
-                        <span class="w-8  bg-[#e4d4e6] mr-3"></span> Conecte-se Comigo
+                <div class="p-2">
+                    <h3 class="text-xs font-black uppercase tracking-widest text-[#bda4c4] mb-8 flex items-center px-6">
+                        <span class="w-2 h-2 bg-[#4a3651] rounded-full mr-3"></span> Conecte-se Comigo
                     </h3>
-                    <div class="space-y-4">
+                    <div class="space-y-3">
                         <a href="https://github.com/swarowskyy" target="_blank"
-                            class="flex items-center p-4 bg-[#f4edf5] rounded-xl hover:bg-[#4a3651] hover:text-white transition-all group">
-                            <span class="font-bold">GitHub Profissional</span>
-                            <span class="ml-auto group-hover:translate-x-1 transition-transform">→</span>
+                            class="flex items-center p-5 bg-[#f4edf5] rounded-[1.5rem] hover:bg-[#4a3651] hover:text-white transition-all group shadow-sm">
+                            <span class="font-bold text-sm">GitHub Profissional</span>
+                            <span class="ml-auto transform group-hover:translate-x-2 transition-transform">→</span>
                         </a>
 
-                        <a href="https://www.linkedin.com/in/luiza-swarowskyy/" target="_blank"
-                            class="flex items-center p-4 bg-[#f4edf5] rounded-xl hover:bg-[#4a3651] hover:text-white transition-all group ">
-                            <span class="font-bold">LinkedIn</span>
-                            <span class="ml-auto group-hover:translate-x-1 transition-transform">→</span>
+                        <a href="https://linkedin.com/in/luiza-swarowskyy/" target="_blank"
+                            class="flex items-center p-5 bg-[#f4edf5] rounded-[1.5rem] hover:bg-[#4a3651] hover:text-white transition-all group shadow-sm">
+                            <span class="font-bold text-sm">LinkedIn</span>
+                            <span class="ml-auto transform group-hover:translate-x-2 transition-transform">→</span>
                         </a>
-                         <a href="mailto:luiza.swarowsky@gmail.com" target="_blank"
-                            class="flex items-center p-4 bg-[#f4edf5] rounded-xl hover:bg-[#A47DAB] hover:text-white transition-all group">
-                            <span class="font-bold">Enviar E-mail</span>
-                            <span class="ml-auto group-hover:translate-x-1 transition-transform">→</span>
-                            </a>
-
+                        
+                        <a href="mailto:luiza.swarowsky@gmail.com" target="_blank"
+                            class="flex items-center p-5 bg-[#A47DAB] rounded-[1.5rem] text-white hover:opacity-90 transition-all group shadow-md">
+                            <span class="font-bold text-sm text-white">Enviar E-mail</span>
+                            <span class="ml-auto transform group-hover:translate-x-2 transition-transform">→</span>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <p class="text-center text-[#bda4c4] text-sm mt-8">
-        Desenvolvido muito carinho para sua melhor experiência, utilizando Angular & Tailwind CSS.
+    <p class="text-center text-[#bda4c4] font-medium text-xs mt-10">
+        Desenvolvido com carinho • Angular & Tailwind CSS
     </p>
 </main>
