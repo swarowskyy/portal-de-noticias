@@ -1,19 +1,19 @@
 <main class="max-w-7xl mx-auto px-4 py-12">
   
   <header class="mb-12 text-center">
-    <h1 class="text-4xl font-extrabold text-gray-900 mb-4 tracking-tight">
+    <h1 class="text-4xl font-extrabold text-[#4a3651] mb-4 tracking-tight">
       Central de Tutoriais
     </h1>
-    <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-      Aprenda as melhores práticas de <span class="text-red-600 font-semibold">Angular</span> 
-      e a estilização moderna com <span class="text-blue-600 font-semibold">Tailwind CSS</span>.
+    <p class="text-lg text-[#765a7c] max-w-2xl mx-auto">
+      Aprenda as melhores práticas de <span class="text-[#A47DAB] font-semibold">Angular</span> 
+      e a estilização moderna com <span class="text-[#A47DAB] font-semibold">Tailwind CSS</span>.
     </p>
   </header>
 
   <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
     
     @for (video of videos; track video.id) {
-      <div class="bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden transition-all hover:shadow-2xl hover:-translate-y-1">
+      <div class="bg-[#fbf9fc] rounded-2xl shadow-md border border-[#e4d4e6] overflow-hidden transition-all hover:shadow-2xl hover:-translate-y-1">
         
         <div class="aspect-video bg-black">
           <iframe 
@@ -28,11 +28,11 @@
 
         <div class="p-6 flex items-center justify-between">
           <div>
-            <h2 class="text-xl font-bold text-gray-800">{{ video.title }}</h2>
-            <p class="text-sm text-gray-500 mt-1">Tutorial completo de {{ video.tech }}</p>
+            <h2 class="text-xl font-bold text-[#5c4365]">{{ video.title }}</h2>
+            <p class="text-sm text-[#8b6b93] mt-1">Tutorial completo de {{ video.tech }}</p>
           </div>
           
-          <span [class]="video.tech === 'Angular' ? 'bg-red-100 text-red-700 border-red-200' : 'bg-blue-100 text-blue-700 border-blue-200'" 
+          <span [class]="video.tech === 'Angular' ? 'bg-[#f4edf5] text-[#A47DAB] border-[#bda4c4]' : 'bg-[#e4d4e6] text-[#5c4365] border-[#8b6b93]'" 
                 class="px-4 py-1 rounded-full text-xs font-bold border uppercase tracking-tighter">
             {{ video.tech }}
           </span>
