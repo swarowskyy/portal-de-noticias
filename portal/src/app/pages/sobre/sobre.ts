@@ -11,7 +11,7 @@ import { CommonModule } from '@angular/common';
 export class Sobre {
   // Dados que aparecerão na página
   nome = 'Luiza Swarowsky';
-  cargo = 'Desenvolvedor Full Stack em Formação';
+  cargo = 'Estudante de Informática para a Internet';
   frase = '"Aprendendo a aprender."';
   
   techs = ['TypeScript', 'Node.js', 'HTML', 'GitHub', 'Angular', 'Tailwind'];
